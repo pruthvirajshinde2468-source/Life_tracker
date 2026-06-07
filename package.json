@@ -1,0 +1,11 @@
+{
+  "name": "life-tracker",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently --names \"API,UI\" --prefix-colors \"green,cyan\" \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start": "concurrently --names \"API,UI\" --prefix-colors \"green,cyan\" \"npm run start --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
